@@ -1,0 +1,52 @@
+---
+title: Requirements
+description: System requirements and dependencies for optimal 20rank performance.
+icon: Box
+---
+
+import { Card } from 'fumadocs-ui/components/card';
+import { Steps } from 'fumadocs-ui/components/steps';
+import { Banner } from 'fumadocs-ui/components/banner';
+import { Cpu, Package } from 'lucide-react';
+
+## Required Components
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+
+<Card icon={<Package />} title="WebView2 Runtime">
+  <p>
+    This modern web-control environment ensures you can leverage 20rank's advanced UI and real-time features. Select the Evergreen Bootstrapper option.
+  </p>
+</Card>
+
+<Card icon={<Cpu />} title="C++ Redistributable">
+  <p>
+    Strengthen your system's runtime to handle resource-intensive tasks confidently.
+  </p>
+  <ul className="list-disc list-inside text-sm text-blue-600 underline">
+    <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe">x86 redistributable</a></li>
+    <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">x64 redistributable</a></li>
+  </ul>
+</Card>
+
+</div>
+
+<Callout title="Installation Order" type="info">
+  For best results, install the WebView2 Runtime first, followed by the appropriate C++ Redistributable packages for your system.
+</Callout >
+
+## System Specifications
+
+For optimal performance, we recommend:
+
+<ul className="list-disc list-inside my-4">
+  <li><strong>Operating System:</strong> Windows 10 or Windows 11</li>
+  <li><strong>Processor:</strong> Multi-core processor (4+ cores recommended)</li>
+  <li><strong>Memory:</strong> 8GB RAM minimum, 16GB+ recommended</li>
+  <li><strong>Storage:</strong> SSD storage with at least 256GB free space</li>
+  <li><strong>Network:</strong> Stable internet connection</li>
+</ul>
+
+<Callout type="warning">
+  ⚠️ Older operating systems or hardware configurations may experience reduced performance or compatibility issues with certain 20rank features.
+</Callout>

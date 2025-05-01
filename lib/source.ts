@@ -1,20 +1,15 @@
 import { docs } from '@/.source';
 import { loader } from 'fumadocs-core/source';
-import { icons, BookIcon } from 'lucide-react';
+import { icons } from 'lucide-react';
 import { createElement } from 'react';
 
-
-// See https://fumadocs.vercel.app/docs/headless/source-api for more info
 export const source = loader({
-  // it assigns a URL to your pages
   baseUrl: '/docs',
   source: docs.toFumadocsSource(),
-  icon(icon) {
-    if (!icon) {
-       
-      return;
+  icon(iconName) {
+    if (!iconName) return;
+    if (iconName in icons) {
+      return createElement(icons[iconName as keyof typeof icons]);
     }
- 
-    if (icon in icons) return createElement(icons[icon as keyof typeof icons]);
   },
 });
