@@ -1,0 +1,6 @@
+{
+    "title": "Display Name",
+    "icon": "MyIcon",
+    "pages": ["index", "faq", "user-agreement", "privacy-policy", "psycho", "requirements"],
+    "defaultOpen": true
+}

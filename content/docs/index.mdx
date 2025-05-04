@@ -1,16 +1,123 @@
 ---
-title: Intoduction
-icon: BookIcon
+title: Documentation
+description: Comprehensive guides and references for 20rank services and applications
+icon: BookOpen
 ---
 
+import { Banner } from 'fumadocs-ui/components/banner';
+import { Card } from 'fumadocs-ui/components/card';
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+import { Files, Folder, File } from 'fumadocs-ui/components/files';
+import { BookOpen, Shield, Compass, Terminal, Coffee, Download, Rocket, MessageCircle } from 'lucide-react';
 
-Welcome to the docs! You can start writing documents in `/content/docs`.
 
-## What is Next?
+# Welcome to 20rank Documentation
 
+Your comprehensive resource for everything related to 20rank's services and applications. Whether you're a new user getting started or an experienced developer looking for advanced features, our documentation provides clear, concise information to help you succeed.
 
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
-</Cards>
+## Documentation Sections
 
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+  <Card icon={<Shield />} title="Terms & Policies" href="/policies/user-agreement">
+    Important legal information about using 20rank services, including user agreements, privacy policies, and license terms.
+  </Card>
+  
+  <Card icon={<Compass />} title="Website Guides" href="/website/getting-started">
+    Learn how to navigate and use the 20rank website effectively, from account management to purchasing licenses.
+  </Card>
+  
+  <Card icon={<Terminal />} title="Application Guides" href="/applications/overview">
+    Detailed instructions for installing, configuring, and using all 20rank applications and services.
+  </Card>
+</div>
+
+## Getting Started
+
+New to 20rank? Here's how to get up and running quickly:
+
+<Steps>
+  <Step>
+    <h3 className="font-medium text-lg">Create your account</h3>
+    <p>Sign up at <a href="https://20rank.ru/register" className="text-blue-600 hover:underline">20rank.ru/register</a> to access all our services.</p>
+  </Step>
+  
+  <Step>
+    <h3 className="font-medium text-lg">Choose your license</h3>
+    <p>Browse our available products and select the license that fits your needs.</p>
+  </Step>
+  
+  <Step>
+    <h3 className="font-medium text-lg">Download and install</h3>
+    <p>Follow our installation guides to set up your 20rank applications.</p>
+  </Step>
+  
+  <Step>
+    <h3 className="font-medium text-lg">Activate your license</h3>
+    <p>Use your account credentials to activate your purchased licenses.</p>
+  </Step>
+</Steps>
+
+## Documentation Structure
+
+Browse our documentation library:
+
+<Files>
+  <Folder name="Policies" defaultOpen>
+    <File name="User Agreement" />
+    <File name="Privacy Policy" />
+    <File name="Refund Policy" />
+    <File name="License Terms" />
+  </Folder>
+  <Folder name="Website Guides">
+    <File name="Getting Started" />
+    <File name="Account Management" />
+    <File name="Purchasing Licenses" />
+    <File name="Support System" />
+  </Folder>
+  <Folder name="Applications" defaultOpen>
+    <Folder name="20rank Pro">
+      <File name="Installation" />
+      <File name="Configuration" />
+      <File name="Features" />
+      <File name="Troubleshooting" />
+    </Folder>
+    <Folder name="20rank Lite">
+      <File name="Installation" />
+      <File name="Features" />
+      <File name="FAQ" />
+    </Folder>
+    <File name="System Requirements" />
+  </Folder>
+</Files>
+
+## Popular Resources
+
+<Tabs items={['Getting Started', 'Common Issues', 'Advanced Usage']} groupId="resources">
+  <Tab value="Getting Started">
+    <ul className="list-disc list-inside my-4">
+      <li><a href="/website/getting-started" className="text-blue-600 hover:underline">First-time user guide</a></li>
+      <li><a href="/applications/installation" className="text-blue-600 hover:underline">Installation instructions</a></li>
+      <li><a href="/website/account-setup" className="text-blue-600 hover:underline">Setting up your account</a></li>
+      <li><a href="/applications/key-features" className="text-blue-600 hover:underline">Key features overview</a></li>
+    </ul>
+  </Tab>
+  
+  <Tab value="Common Issues">
+    <ul className="list-disc list-inside my-4">
+      <li><a href="/troubleshooting/activation" className="text-blue-600 hover:underline">License activation problems</a></li>
+      <li><a href="/troubleshooting/hardware-id" className="text-blue-600 hover:underline">HWID binding issues</a></li>
+      <li><a href="/troubleshooting/connection" className="text-blue-600 hover:underline">Connection troubleshooting</a></li>
+      <li><a href="/applications/requirements" className="text-blue-600 hover:underline">System requirements</a></li>
+    </ul>
+  </Tab>
+  
+  <Tab value="Advanced Usage">
+    <ul className="list-disc list-inside my-4">
+      <li><a href="/advanced/api-access" className="text-blue-600 hover:underline">API documentation</a></li>
+      <li><a href="/advanced/customization" className="text-blue-600 hover:underline">Advanced customization</a></li>
+      <li><a href="/advanced/automation" className="text-blue-600 hover:underline">Automation options</a></li>
+      <li><a href="/advanced/performance" className="text-blue-600 hover:underline">Performance optimization</a></li>
+    </ul>
+  </Tab>
+</Tabs>
